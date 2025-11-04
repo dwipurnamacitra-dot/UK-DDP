@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int totalDetik;
+    cout << "Masukkan bilangan >1 (satuan detik): ";
+    cin >> totalDetik;
+
+    int jam = totalDetik / 3600;
+    int sisaDetik = totalDetik % 3600;
+    int menit = sisaDetik / 60;
+    int detik = sisaDetik % 60;
+
+    cout << "\nHasil Konversi   :\n";
+    cout << totalDetik << "detik = " << jam << "Jam, " << menit << "Menit, " << detik << "Detik.";
+
+    return 0;
+}
